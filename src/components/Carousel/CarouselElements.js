@@ -29,13 +29,17 @@ export const Row = styled.div`
   display: grid;
   grid-auto-column: minimax(auto, 1fr);
   align-items: center;
-  grid-template-areas: col1 col2;
+  grid-template-areas: ${({ imgStart }) =>
+    imgStart ? `'col1 col2'` : `'col2 col1'`};
 `;
 
 export const Column = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
+
+
+  }
 `;
 export const Column1 = styled.div`
   margin-bottom: 15px;
@@ -63,7 +67,8 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: black;
+  color: white;
+  background: black;
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -79,4 +84,28 @@ export const Subtitle = styled.p`
 export const ButtonWrap = styled.div`
   display: flex;
   justify-content: flex-start;
+`;
+export const ImgWrap = styled.p`
+  max-width: 555px;
+  height: 100%;
+`;
+
+export const Img = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+  animation: navb 1s linear 0s 1 normal forwards;
+
+  @keyframes navb {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+  }
 `;

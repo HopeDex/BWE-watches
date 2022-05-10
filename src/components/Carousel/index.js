@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import img from "../../images/preview.png";
 import {
   Wrapper,
   Container,
@@ -7,6 +8,8 @@ import {
   ButtonWrap,
   TextWrapper,
   Row,
+  Img,
+  ImgWrap,
   Column,
   TopLine,
   Heading,
@@ -27,10 +30,8 @@ const Carousel = () => {
                 </Heading>
                 <Subtitle>
                   BWE is home to the greatest collection of pre-owned luxury
-                  watches. {<br />}
-                  all certified as authentic and collector Quality. Watches, all
-                  certified {<br />}
-                  as authentic and Collector quality
+                  watches. all certified as authentic and collector Quality.
+                  Watches, all certified as authentic and Collector quality
                 </Subtitle>
                 <ButtonWrap>
                   <Button>Shop now</Button>
@@ -38,23 +39,9 @@ const Carousel = () => {
               </TextWrapper>
             </Column>
             <Column1>
-              <TextWrapper>
-                <TopLine>Quality Smart Watch</TopLine>
-                <Heading>
-                  For people who
-                  <p>do not go with the times.</p>
-                </Heading>
-                <Subtitle>
-                  BWE is home to the greatest collection of pre-owned luxury
-                  watches. {<br />}
-                  all certified as authentic and collector Quality. Watches, all
-                  certified {<br />}
-                  as authentic and Collector quality
-                </Subtitle>
-                <ButtonWrap>
-                  <Button>Shop now</Button>
-                </ButtonWrap>
-              </TextWrapper>
+              <ImgWrap>
+                <Img src={img} alt="watch" />
+              </ImgWrap>
             </Column1>
           </Row>
         </Wrapper>

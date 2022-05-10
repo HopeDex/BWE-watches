@@ -7,7 +7,8 @@ export const Nav = styled.nav`
   display: flex;
   position: sticky;
   top: 0;
-  margin-top: -6opx;
+  padding-left: 100px;
+  margin-right: 100px;
 `;
 
 export const NavContainer = styled.div`
@@ -27,7 +28,6 @@ export const NavLogo = styled.a`
   margin-left: center;
   font-weight: bold;
   text-decoration: none;
-
   &:hover {
     transition: all 0.3s ease-in-out;
     text-decoration: none;
@@ -41,9 +41,19 @@ export const NavMenu = styled.ul`
   margin-bottom: 0;
   list-style: none;
   text-align: center;
+  animation: navbar 1s linear 0s 1 normal forwards;
 
   @media screen and (max-width: 768px) {
     display: none;
+  }
+  @keyframes navbar {
+    0% {
+      transform: translateY(-20px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
   }
 `;
 export const NavMenu2 = styled.ul`
