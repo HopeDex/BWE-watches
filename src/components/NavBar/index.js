@@ -1,4 +1,7 @@
 import React from "react";
+import { FiShoppingCart, FiHeart } from "react-icons/fi";
+
+import { FaShoePrints } from "react-icons/fa";
 import "./NavbarElements.js";
 import {
   Nav,
@@ -31,11 +34,25 @@ const Navbar = () => {
             </NavItem>
           </NavMenu>
           <NavMenu>
-            <NavLogo>Troll</NavLogo>
+            <NavLogo>
+              <FaShoePrints />
+              Troll
+            </NavLogo>
           </NavMenu>
           <NavMenu>
+            <NavItem>
+              <NavLink>Sign In</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink>
+                <FiHeart fontSize={"20px"} />
+              </NavLink>
+            </NavItem>
+
             <NavButton>
-              <NavButtonLink to="/download">Download CV</NavButtonLink>
+              <NavButtonLink to="/download">
+                <FiShoppingCart fontSize={"20px"} />3
+              </NavButtonLink>
             </NavButton>
           </NavMenu>
         </NavContainer>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import { FiArrowRight } from "react-icons/fi";
 import img from "../../images/preview.png";
 import {
   Wrapper,
@@ -14,6 +15,8 @@ import {
   TopLine,
   Heading,
   Column1,
+  HeadWrapper,
+  SubWrapper,
 } from "./CarouselElements";
 const Carousel = () => {
   return (
@@ -24,17 +27,34 @@ const Carousel = () => {
             <Column>
               <TextWrapper>
                 <TopLine>Quality Smart Watch</TopLine>
-                <Heading>
-                  For people who
-                  <p>do not go with the times.</p>
-                </Heading>
-                <Subtitle>
-                  BWE is home to the greatest collection of pre-owned luxury
-                  watches. all certified as authentic and collector Quality.
-                  Watches, all certified as authentic and Collector quality
-                </Subtitle>
+                <HeadWrapper>
+                  <Heading>For people who</Heading>
+                </HeadWrapper>
+                <HeadWrapper>
+                  <Heading>do not go with the </Heading>
+                </HeadWrapper>
+                <HeadWrapper>
+                  <Heading>times</Heading>
+                </HeadWrapper>
+                <SubWrapper>
+                  <Subtitle>
+                    BWE is home to the greatest collection of luxury
+                  </Subtitle>
+                </SubWrapper>
+                <SubWrapper>
+                  <Subtitle>
+                    watches. all certified as authentic and collector Quality.
+                  </Subtitle>
+                </SubWrapper>
+                <SubWrapper>
+                  <Subtitle>
+                    Watches, all certified as authentic and Collector quality
+                  </Subtitle>
+                </SubWrapper>
                 <ButtonWrap>
-                  <Button>Shop now</Button>
+                  <Button>
+                    Shop now <FiArrowRight />
+                  </Button>
                 </ButtonWrap>
               </TextWrapper>
             </Column>

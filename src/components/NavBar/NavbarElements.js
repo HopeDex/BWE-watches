@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
   height: 60px;
   display: flex;
   position: sticky;
@@ -56,19 +55,7 @@ export const NavMenu = styled.ul`
     }
   }
 `;
-export const NavMenu2 = styled.ul`
-  display: flex;
-  align-items: right;
 
-  margin-bottom: 0;
-  list-style: none;
-  text-align: center;
-  margin-right: -22px;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;
 export const NavItem = styled.li`
   height: 60px;
 `;
@@ -81,14 +68,18 @@ export const NavLink = styled(LinkScroll)`
   height: 100%;
   padding: 0 1rem;
   cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
 
   &.active {
     border-bottom: 3px solid beige;
   }
 
   &:hover {
-    transition: all 0.3s ease-in-out;
-    background: black;
+    transition: all 0.2s ease-in-out;
+    color: black;
+    text-decoration: none;
+    background: white;
   }
 `;
 export const NavButton = styled.nav`
