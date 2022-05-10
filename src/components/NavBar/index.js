@@ -1,7 +1,7 @@
 import React from "react";
 import { FiShoppingCart, FiHeart } from "react-icons/fi";
 
-import { FaShoePrints } from "react-icons/fa";
+import { FaShoePrints, FaBars } from "react-icons/fa";
 import "./NavbarElements.js";
 import {
   Nav,
@@ -54,6 +54,7 @@ const Navbar = () => {
                 <FiShoppingCart fontSize={"20px"} />3
               </NavButtonLink>
             </NavButton>
+            {/* <FaBars /> */}
           </NavMenu>
         </NavContainer>
       </Nav>

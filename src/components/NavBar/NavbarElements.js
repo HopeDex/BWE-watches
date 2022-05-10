@@ -4,7 +4,6 @@ import { Link as LinkScroll } from "react-scroll";
 export const Nav = styled.nav`
   height: 60px;
   display: flex;
-  position: sticky;
   top: 0;
   padding-left: 100px;
   margin-right: 100px;
@@ -17,9 +16,10 @@ export const NavContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 20px;
+  background: transparent;
 `;
 export const NavLogo = styled.a`
-  color: black;
+  color: #fff;
   cursor: pointer;
   font-size: 1.5rem;
   display: flex;
@@ -61,7 +61,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLink = styled(LinkScroll)`
-  color: black;
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -93,10 +93,10 @@ export const NavButton = styled.nav`
 
 export const NavButtonLink = styled.a`
   border-radius: 50px;
-  background: black;
+  background: white;
   white-space: nowrap;
   padding: 10px 22px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 16px;
   outline: none;
@@ -107,8 +107,22 @@ export const NavButtonLink = styled.a`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: white;
-    color: black;
+    background: black;
+    color: white;
     text-decoration: none;
+  }
+`;
+export const MIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: black;
+    color: white;
   }
 `;

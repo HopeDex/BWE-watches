@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   color: #fff;
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
   padding: 10px;
 `;
 
@@ -54,7 +53,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: black;
+  color: white;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
@@ -90,7 +89,7 @@ export const Heading = styled.h1`
 
   line-height: 1;
   font-weight: 600;
-  color: black;
+  color: white;
 
   animation: 2s anim-lineUp ease-in;
 
@@ -145,7 +144,7 @@ export const Subtitle = styled.p`
   margin-bottom: 5px;
   font-size: 18px;
   line-height: 24px;
-  color: black;
+  color: white;
   animation: 2s anim-lineUp ease-in;
 `;
 export const ButtonWrap = styled.div`
