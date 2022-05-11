@@ -1,4 +1,9 @@
 body{
   
-  background: linear-gradient(90deg, rgba(0,113,209,1) 0%, rgba(15,39,213,1) 0%, rgba(0,0,0,1) 100%);
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(1,7,110,1) 100%, rgba(0,113,209,1) 100%);
+}
+.btn-primary{
+  background-color: black;
+  
 }

@@ -1,40 +1,38 @@
 import React from "react";
-import { Button } from "react-bootstrap";
-import { FiArrowRight } from "react-icons/fi";
-import img from "../../images/preview.png";
 import {
-  Wrapper,
   Container,
+  Wrapper,
+  Row,
+  Column,
+  Column1,
+  Img,
+  Img2,
+} from "./CollectionElements";
+import { Button } from "react-bootstrap";
+import upper from "../../images/project.png";
+import upper1 from "../../images/project2.png";
+import upper2 from "../../images/project3.png";
+import { FiArrowRight } from "react-icons/fi";
+import {
   Subtitle,
+  SubWrapper,
+  TopLine,
+  HeadWrapper,
+  Heading,
   ButtonWrap,
   TextWrapper,
-  Row,
-  Img,
-  ImgWrap,
-  Column,
-  TopLine,
-  Heading,
-  Column1,
-  HeadWrapper,
-  SubWrapper,
-} from "./CarouselElements";
-const Carousel = () => {
+} from "../Carousel/CarouselElements";
+const Collection = () => {
   return (
     <>
       <Container>
         <Wrapper>
           <Row>
             <Column>
-              <TextWrapper>
-                <TopLine>Quality Smart Watch</TopLine>
+              <TextWrapper color={"black"}>
+                <TopLine>_____ .2 </TopLine>
                 <HeadWrapper>
-                  <Heading>For people who</Heading>
-                </HeadWrapper>
-                <HeadWrapper>
-                  <Heading>do not go with the </Heading>
-                </HeadWrapper>
-                <HeadWrapper>
-                  <Heading>times</Heading>
+                  <Heading>Collection by Dexter Kazama</Heading>
                 </HeadWrapper>
                 <SubWrapper>
                   <Subtitle>
@@ -52,16 +50,16 @@ const Carousel = () => {
                   </Subtitle>
                 </SubWrapper>
                 <ButtonWrap>
-                  <Button variant="dark">
+                  <Button>
                     Shop now <FiArrowRight />
                   </Button>
                 </ButtonWrap>
               </TextWrapper>
             </Column>
             <Column1>
-              <ImgWrap>
-                <Img src={img} alt="watch" />
-              </ImgWrap>
+              <Img src={upper} />
+              <Img2 src={upper1} />
+              <Img src={upper2} />
             </Column1>
           </Row>
         </Wrapper>
@@ -70,4 +68,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default Collection;

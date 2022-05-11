@@ -18,7 +18,13 @@ export const Wrapper = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
-
+  background: rgb(0, 113, 209);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 113, 209, 1) 0%,
+    rgba(1, 7, 110, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
   @media screen and (max-width: 768px) {
     height: 770px;
   }

@@ -56,7 +56,7 @@ const Products = () => {
                 <br />
                 <br />
                 <br />
-                <Button color="white">
+                <Button variant="dark">
                   Shop Now <FaArrowRight />
                 </Button>
               </p>
