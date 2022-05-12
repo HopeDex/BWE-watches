@@ -44,6 +44,28 @@ export const HeadLine = styled.h2`
   font-weight: bold;
   color: white;
   font-size: 2rem;
+  animation: 2s anim-lineUp ease-in;
+
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.75;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 `;
 export const Row = styled.div`
   display: grid;

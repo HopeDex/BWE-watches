@@ -5,6 +5,24 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(1,7,110,1) 100%, rgba(
 }
 .btn-primary{
   background-color: black;
-  
+  /* justify-content: ; */
 }
 
+
+.line1
+{
+  fill: none;
+    stroke: white;
+    font-family: Arial;
+    width: 400;
+  stroke-miterlimit: 10;
+	stroke-dasharray:2300;
+	stroke-dashoffset:2300;
+	animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

@@ -7,8 +7,8 @@
     background: rgb(215, 225, 235);
     background: linear-gradient(
       105deg,
-      rgba(215, 225, 235, 1) 0%,
-      rgba(211, 198, 179, 1) 61%
+      rgb(255, 255, 255) 0%,
+      rgb(192,192,192) 61%
     );
   
     padding: 10px;

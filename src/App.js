@@ -1,4 +1,5 @@
 import "./App.css";
+import Blog from "./components/Blog";
 import Brands from "./components/Brands";
 import Carousel from "./components/Carousel";
 import Collection from "./components/Collection";
@@ -13,6 +14,7 @@ function App() {
       <Products />
       <Collection />
       <Brands />
+      <Blog />
     </div>
   );
 }
