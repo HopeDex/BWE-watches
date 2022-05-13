@@ -32,6 +32,28 @@ export const Title = styled.h2`
   top: 20%;
   width: 100%;
   text-align: left;
+  animation: 2s anim-lineUp ease-in;
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.3;
+      transform: translateY(0%);
+    }
+    75% {
+      opacity: 0.5;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 `;
 
 export const BottomLine = styled.a`
