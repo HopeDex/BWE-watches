@@ -1,4 +1,5 @@
 import React from "react";
+import Column from "./Column";
 import {
   Container,
   HeadLine,
@@ -6,18 +7,13 @@ import {
   Wrapper,
 } from "../Products/ProductElements";
 import { Subtitle, TopLine } from "../Carousel/CarouselElements";
-import { Row, Row1, Div, Title, BottomLine, Img } from "./BlogElements";
+import { Row, Row1 } from "./BlogElements";
 import { Button } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa";
 import "./index.css";
-import apple from "../../images/oppo.png";
+import { column3, column1, column2, column4 } from "./Data";
 
 const Blog = () => {
-  const mystyle = {
-    width: "40%",
-    height: "5px",
-    color: "white",
-  };
   return (
     <div>
       <Container>
@@ -48,55 +44,10 @@ const Blog = () => {
             </TextWrapper>
           </Row>
           <Row1>
-            <div className="coll1">
-              <hr style={mystyle} />
-              <Title>
-                One to WatchBrew
-                <br />
-                Watch Co.
-              </Title>
-              <div className="overlay">
-                <div className="text">
-                  <Img src={apple} alt="Apple" class="image" />
-                </div>
-              </div>
-              <BottomLine>Read More</BottomLine>
-            </div>
-
-            <Div>
-              <hr style={mystyle} />
-              <Title>Hands-On The Parmigiani Tonda PF Collection</Title>
-              <div className="overlay">
-                <div className="text">
-                  <img src="{applelogo}" alt="Apple" class="image" />
-                </div>
-              </div>
-              <BottomLine>Read More</BottomLine>
-            </Div>
-
-            <Div>
-              <hr style={mystyle} />
-              <Title>
-                Introducing Glashutte Original Rosy New Perpetual Calendar
-              </Title>
-              <div className="overlay">
-                <div className="text">
-                  <img src="{applelogo}" alt="Apple" class="image" />
-                </div>
-              </div>
-              <BottomLine>Read More</BottomLine>
-            </Div>
-
-            <Div>
-              <hr style={mystyle} />
-              <Title>In-Depth With The Apple Watch Series 7</Title>
-              <div className="overlay">
-                <div className="text">
-                  <img src="{applelogo}" alt="Apple" class="image" />
-                </div>
-              </div>
-              <BottomLine>Read More</BottomLine>
-            </Div>
+            <Column {...column1} />
+            <Column {...column2} />
+            <Column {...column3} />
+            <Column {...column4} />
           </Row1>
         </Wrapper>
       </Container>

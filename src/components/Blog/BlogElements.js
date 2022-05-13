@@ -25,22 +25,24 @@ export const Row1 = styled.div`
     grid-template-areas: "col1 col1" "col2 col2" "col3 col3";
   }
 `;
-export const Div = styled.div`
-  background: transparent;
-  border-radius: 25px;
-  height: 450px;
-  color: white;
-  padding: 20px;
+
+export const Title = styled.h2`
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 100%;
+  text-align: left;
 `;
 
-export const Title = styled.h2``;
-
 export const BottomLine = styled.a`
-  bottom: 100%;
+  position: absolute;
+  bottom: 8px;
+  padding-left: 80px;
+  font-size: 18px;
   color: white;
 `;
 export const Img = styled.img`
-  opacity: 0.3;
+  opacity: 0.7;
   display: block;
   width: 100%;
   height: 100%;
