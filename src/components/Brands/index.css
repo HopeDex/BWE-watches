@@ -1,7 +1,6 @@
-.container{
-    margin-top: 100px;
+.wrapper{
     height: 700px;
-    max-width: 1300px;
+    width: 1200px;
     border-radius: 25px;
     color: black;
     background: rgb(215, 225, 235);
@@ -14,10 +13,9 @@
     padding: 10px;
     margin-right: auto;
     margin-left: auto;
+
+
   
-    @media screen and (max-width: 768px) {
-      padding: 100px 0;
-    }
 }
 .TopLayer{
     height: 30%;
@@ -87,11 +85,12 @@
     display: grid;
     grid-gap: 5px;
     height: 70%;
-    padding: 10px;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
     color: white;
+
+
 }
 
 .Item1{
@@ -104,6 +103,7 @@
     grid-column: 1;
     grid-row: 1 / span 2;
     border-radius: 25px;
+
 }
 .Item2{
     border-radius: 25px;
@@ -114,6 +114,7 @@
     font-size: 30px;
     grid-column: 2;
     grid-row: 1;
+
 }
 
 .Item3{
@@ -203,7 +204,7 @@
   }
   .text {
     white-space: nowrap; 
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     position: absolute;
     overflow: hidden;
@@ -211,3 +212,35 @@
     transform: translate(-2%, -50%);
     -ms-transform: translate(-2%, -50%);
   }
+
+  @media screen and (max-width: 480px) {
+    .container{width: 100%; height: auto;}
+    .GridItem{width: 100%;
+    height: auto;}
+    .TopLayer{max-width: 100%;}
+    .Item1{width: 100%;
+      grid-column :1;
+      grid-row: 1;}
+    .Item2{width: 100%;
+      grid-column :1;
+      grid-row: 2;}
+    .Item3{width: 100%;
+        grid-column :1;
+        grid-row: 3;}
+    .Item4{width: 100%;
+          grid-column :1;
+          grid-row: 4;}
+    .Item5{width: 100%;
+            grid-column :1;
+            grid-row: 5;}
+     .Item6{width: 100%;
+              grid-column :1;
+              grid-row: 6;}
+      .Item7{width: 100%;
+                grid-column :1;
+                grid-row: 7;}
+  }
+
+  .container, .container-lg, .container-md, .container-sm {
+    max-width: 100%;
+}

@@ -54,7 +54,7 @@ const Navbar = () => {
                 <FiShoppingCart fontSize={"20px"} />3
               </NavButtonLink>
             </NavButton>
-            {/* <FaBars /> */}
+            <FaBars />
           </NavMenu>
         </NavContainer>
       </Nav>

@@ -1,12 +1,7 @@
 import React from "react";
 import Column from "./Column";
-import {
-  Container,
-  HeadLine,
-  TextWrapper,
-  Wrapper,
-} from "../Products/ProductElements";
-import { Subtitle, TopLine } from "../Carousel/CarouselElements";
+import { HeadLine, TextWrapper, Wrapper } from "../Products/ProductElements";
+import { Container, Subtitle, TopLine } from "../Carousel/CarouselElements";
 import { Row, Row1 } from "./BlogElements";
 import { Button } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa";

@@ -1,33 +1,32 @@
 .coll1{
     position: relative;
     padding: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     height: 450px;
+    border-style:ridge;
 }
 .coll2{
   position: relative;
   padding: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   height: 450px;
 }
 .coll3{
   position: relative;
   padding: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   height: 450px;
 }
 .coll4{
   position: relative;
   padding: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   height: 450px;
 }
 .overlay {
     position: absolute;
     bottom: 100%;
-    left: 0;
     right: 0;
-    background-color: #ffffff00;
     border-radius: 25px;
     overflow: hidden;
     width: 100%;
@@ -39,19 +38,23 @@
     bottom: 0;
     height: 100%;
     background-color: #ffffff00;
+    color: white;
   }
   .coll2:hover  .overlay {
     bottom: 0;
     height: 100%;
     background-color: #ffffff00;
+    color: white;
   }
   .coll3:hover  .overlay {
     bottom: 0;
     height: 100%;
     background-color: #ffffff00;
+    color: white;
   }
   .coll4:hover  .overlay {
     bottom: 0;
     height: 100%;
     background-color: #ffffff00;
+    color: white;
   }

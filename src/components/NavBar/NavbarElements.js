@@ -15,8 +15,7 @@ export const NavContainer = styled.div`
   height: 60px;
   z-index: 1;
   width: 100%;
-  padding: 0 20px;
-  background: transparent;
+  padding: auto;
 `;
 export const NavLogo = styled.a`
   color: #fff;

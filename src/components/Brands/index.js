@@ -11,10 +11,11 @@ import apple1 from "../../images/razor.png";
 import applelogo from "../../images/logol.jpeg";
 import milogo from "../../images/mi.jpg";
 import "./index.css";
+import { Container } from "../Carousel/CarouselElements";
 const Brands = () => {
   return (
-    <div>
-      <div className="container">
+    <Container>
+      <div className="wrapper">
         <div className="TopLayer">
           <p className="TopLine">_____ .3</p>
           <h1 className="Heading">Brands We Provide.</h1>
@@ -78,7 +79,7 @@ const Brands = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

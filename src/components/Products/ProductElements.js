@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin-top: 100px;
   color: black;
   padding: 10px;
 
+  @media screen and (max-width: 480px) {
+    height: 750px;
+    margin: 0;
+    max-width: 100%;
+  }
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    max-width: 100%;
+    height: auto;
   }
 `;
 export const Wrapper = styled.div`
@@ -14,7 +19,7 @@ export const Wrapper = styled.div`
   z-index: 1;
   height: 750px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -26,16 +31,23 @@ export const Wrapper = styled.div`
     rgba(0, 0, 0, 1) 100%
   );
   @media screen and (max-width: 768px) {
-    height: 770px;
+    height: auto;
+    max-width: 100%;
   }
   @media screen and (max-width: 480px) {
-    height: 770px;
+    height: auto;
+    max-width: 100%;
   }
 `;
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 10px;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    height: 100px;
+  }
 `;
 export const TopLine = styled.h6`
   font-weight: bold;
@@ -68,26 +80,34 @@ export const HeadLine = styled.h2`
   }
 `;
 export const Row = styled.div`
+  margin-top: 0px;
   display: grid;
-  grid-auto-columns: 33%;
   justify-content: space-between;
   align-items: center;
   grid-template-areas: "col2 col1 col3";
 
   @media screen and (max-width: 480px) {
-    grid-auto-columns: 100%;
+    padding: 0px;
+    max-width: 100%;
+    grid-auto-columns: 30%;
+    grid-template-areas: "col1 col1" "col2 col2" "col3 col3";
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0px;
+    max-width: 100%;
+    grid-auto-columns: 30%;
     grid-template-areas: "col1 col1" "col2 col2" "col3 col3";
   }
 `;
 
 export const Row1 = styled.div`
   display: grid;
-  grid-auto-columns: 33%;
   justify-content: space-between;
   align-items: center;
   grid-template-areas: "col4 col1 col3";
 
   @media screen and (max-width: 480px) {
+    width: 300px;
     grid-auto-columns: 100%;
     grid-template-areas: "col1 col1" "col2 col2" "col3 col3";
   }
@@ -134,6 +154,10 @@ export const Img = styled.img`
   width: 100%;
   height: 300px;
   display: block;
+  @media screen and (max-width: 480px) {
+    height: 200px;
+    width: 100%;
+  }
 `;
 export const Overlay = styled.div`
   position: absolute;

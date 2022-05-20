@@ -3,24 +3,33 @@ import styled from "styled-components";
 export const Container = styled.div`
   color: #fff;
   padding: 10px;
+  @media screen and (max-width: 480px) {
+    max-width: 100%;
+    height: 400px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    height: 400px;
+  }
 `;
 
 export const Wrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 500px;
+  height: 600px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
-
-  @media screen and (max-width: 768px) {
-    height: 770px;
-  }
   @media screen and (max-width: 480px) {
-    height: 770px;
+    max-width: 100%;
+    height: 400px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    height: 400px;
   }
 `;
 
@@ -60,6 +69,9 @@ export const TopLine = styled.p`
   text-transform: uppercase;
   margin-bottom: 16px;
   animation: 2s anim-lineUp ease-in;
+  @media screen and (max-width: 480px) {
+    font-size: 8px;
+  }
   @keyframes anim-lineUp {
     0% {
       opacity: 0;
@@ -94,7 +106,7 @@ export const Heading = styled.h1`
   animation: 2s anim-lineUp ease-in;
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 26px;
   }
   @keyframes anim-lineUp {
     0% {
@@ -146,6 +158,10 @@ export const Subtitle = styled.p`
   line-height: 24px;
   color: white;
   animation: 2s anim-lineUp ease-in;
+
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
+  }
 `;
 export const ButtonWrap = styled.div`
   margin-top: 20px;
@@ -159,11 +175,14 @@ export const ImgWrap = styled.p`
 `;
 
 export const Img = styled.img`
+
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
   animation: navb 1s linear 0s 1 normal forwards;
-
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
   @keyframes navb {
 	0% {
 		opacity: 0;

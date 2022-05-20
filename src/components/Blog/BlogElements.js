@@ -8,8 +8,9 @@ export const Row = styled.div`
   grid-template-areas: "col1 col2 col3";
 
   @media screen and (max-width: 480px) {
+    max-width: 100%;
     grid-auto-columns: 100%;
-    grid-template-areas: "col1 col1" "col2 col2" "col3 col3";
+    grid-template-areas: "col1" "col2 " "col3 ";
   }
 `;
 export const Row1 = styled.div`
@@ -21,8 +22,10 @@ export const Row1 = styled.div`
   grid-template-areas: "col1 col2 col3 col4";
 
   @media screen and (max-width: 480px) {
+    max-width: 100%;
     grid-auto-columns: 100%;
-    grid-template-areas: "col1 col1" "col2 col2" "col3 col3";
+    grid-template-areas: "col1 " "col2 " "col3 ";
+    height: auto;
   }
 `;
 
@@ -30,6 +33,7 @@ export const Title = styled.h2`
   position: absolute;
   left: 0;
   top: 20%;
+  color: white;
   width: 100%;
   text-align: left;
   animation: 2s anim-lineUp ease-in;

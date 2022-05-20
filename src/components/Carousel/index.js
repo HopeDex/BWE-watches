@@ -52,7 +52,7 @@ const Carousel = () => {
                   </Subtitle>
                 </SubWrapper>
                 <ButtonWrap>
-                  <Button variant="dark">
+                  <Button variant="primary">
                     Shop now <FiArrowRight />
                   </Button>
                 </ButtonWrap>
